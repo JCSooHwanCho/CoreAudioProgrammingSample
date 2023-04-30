@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4255165A29F2E10000563897 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255165929F2E10000563897 /* main.swift */; };
 		4255166229F2E7F900563897 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
+		5353DE6A29FE3CF500A05E25 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353DE6929FE3CF500A05E25 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,12 +22,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		5353DE6529FE3CF400A05E25 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4255165629F2E10000563897 /* CoreAudioBook */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoreAudioBook; sourceTree = BUILT_PRODUCTS_DIR; };
+		4255165629F2E10000563897 /* HelloCoreAudio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloCoreAudio; sourceTree = BUILT_PRODUCTS_DIR; };
 		4255165929F2E10000563897 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4255166129F2E7F900563897 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5353DE6729FE3CF400A05E25 /* CAToneFileGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAToneFileGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		5353DE6929FE3CF500A05E25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,13 +50,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5353DE6429FE3CF400A05E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4255164D29F2E10000563897 = {
 			isa = PBXGroup;
 			children = (
-				4255165829F2E10000563897 /* CoreAudioBook */,
+				4255165829F2E10000563897 /* HelloCoreAudio */,
+				5353DE6829FE3CF500A05E25 /* CAToneFileGenerator */,
 				4255165729F2E10000563897 /* Products */,
 				4255166029F2E7F900563897 /* Frameworks */,
 			);
@@ -53,17 +73,18 @@
 		4255165729F2E10000563897 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4255165629F2E10000563897 /* CoreAudioBook */,
+				4255165629F2E10000563897 /* HelloCoreAudio */,
+				5353DE6729FE3CF400A05E25 /* CAToneFileGenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4255165829F2E10000563897 /* CoreAudioBook */ = {
+		4255165829F2E10000563897 /* HelloCoreAudio */ = {
 			isa = PBXGroup;
 			children = (
 				4255165929F2E10000563897 /* main.swift */,
 			);
-			path = CoreAudioBook;
+			path = HelloCoreAudio;
 			sourceTree = "<group>";
 		};
 		4255166029F2E7F900563897 /* Frameworks */ = {
@@ -74,12 +95,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5353DE6829FE3CF500A05E25 /* CAToneFileGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				5353DE6929FE3CF500A05E25 /* main.swift */,
+			);
+			path = CAToneFileGenerator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4255165529F2E10000563897 /* CoreAudioBook */ = {
+		4255165529F2E10000563897 /* HelloCoreAudio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4255165D29F2E10000563897 /* Build configuration list for PBXNativeTarget "CoreAudioBook" */;
+			buildConfigurationList = 4255165D29F2E10000563897 /* Build configuration list for PBXNativeTarget "HelloCoreAudio" */;
 			buildPhases = (
 				4255165229F2E10000563897 /* Sources */,
 				4255165329F2E10000563897 /* Frameworks */,
@@ -89,9 +118,26 @@
 			);
 			dependencies = (
 			);
-			name = CoreAudioBook;
+			name = HelloCoreAudio;
 			productName = CoreAudioBook;
-			productReference = 4255165629F2E10000563897 /* CoreAudioBook */;
+			productReference = 4255165629F2E10000563897 /* HelloCoreAudio */;
+			productType = "com.apple.product-type.tool";
+		};
+		5353DE6629FE3CF400A05E25 /* CAToneFileGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5353DE6D29FE3CF500A05E25 /* Build configuration list for PBXNativeTarget "CAToneFileGenerator" */;
+			buildPhases = (
+				5353DE6329FE3CF400A05E25 /* Sources */,
+				5353DE6429FE3CF400A05E25 /* Frameworks */,
+				5353DE6529FE3CF400A05E25 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAToneFileGenerator;
+			productName = CAToneFileGenerator;
+			productReference = 5353DE6729FE3CF400A05E25 /* CAToneFileGenerator */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -101,11 +147,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					4255165529F2E10000563897 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					5353DE6629FE3CF400A05E25 = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
@@ -122,7 +171,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4255165529F2E10000563897 /* CoreAudioBook */,
+				4255165529F2E10000563897 /* HelloCoreAudio */,
+				5353DE6629FE3CF400A05E25 /* CAToneFileGenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4255165A29F2E10000563897 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5353DE6329FE3CF400A05E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5353DE6A29FE3CF500A05E25 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TNJ2M3BZTY;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -267,8 +325,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TNJ2M3BZTY;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5353DE6B29FE3CF500A05E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV4MQR92AT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5353DE6C29FE3CF500A05E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV4MQR92AT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -286,11 +368,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4255165D29F2E10000563897 /* Build configuration list for PBXNativeTarget "CoreAudioBook" */ = {
+		4255165D29F2E10000563897 /* Build configuration list for PBXNativeTarget "HelloCoreAudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4255165E29F2E10000563897 /* Debug */,
 				4255165F29F2E10000563897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5353DE6D29FE3CF500A05E25 /* Build configuration list for PBXNativeTarget "CAToneFileGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5353DE6B29FE3CF500A05E25 /* Debug */,
+				5353DE6C29FE3CF500A05E25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
