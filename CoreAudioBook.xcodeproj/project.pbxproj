@@ -10,6 +10,7 @@
 		4255165A29F2E10000563897 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255165929F2E10000563897 /* main.swift */; };
 		4255166229F2E7F900563897 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
 		5353DE6A29FE3CF500A05E25 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353DE6929FE3CF500A05E25 /* main.swift */; };
+		5353DE6E29FE3ED800A05E25 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5353DE6E29FE3ED800A05E25 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DV4MQR92AT;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,7 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DV4MQR92AT;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
