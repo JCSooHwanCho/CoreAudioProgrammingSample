@@ -58,14 +58,7 @@ autoreleasepool {
     
     while sampleCount < maxSampleCount {
         for i in 0..<wavelengthInSamples {
-             var sample: Int16
-
-            if i < wavelengthInSamples / 2 {
-                sample = .max.bigEndian
-            } else {
-                sample = .min.bigEndian
-            }
-
+            var sample: Int16 = squareWaveSample(wavelengthInSamples, i)
             audioErr = AudioFileWriteBytes(audioFile,
                                            false,
                                            sampleCount * 2,
@@ -81,4 +74,25 @@ autoreleasepool {
     assert(audioErr == noErr)
 
     print("wrote \(sampleCount) samples")
+}
+
+func squareWaveSample(_ wavelengthInSamples: Int, _ index: Int) -> Int16 {
+    if index < wavelengthInSamples / 2 {
+        return .max.bigEndian
+    } else {
+        return .min.bigEndian
+    }
+}
+
+func sawtoothWaveSample(_ wavelengthInSamples: Int, _ index: Int) -> Int16 {
+    let maxValue = Double(Int16.max)
+    let ratio = Double(index) / Double(wavelengthInSamples)
+    return Int16(ratio * (maxValue * 2) - maxValue).bigEndian
+}
+
+func sineWaveSample(_ wavelengthInSamples: Int, _ index: Int) -> Int16 {
+    let maxValue = Double(Int16.max)
+    let ratio = Double(index) / Double(wavelengthInSamples)
+
+    return Int16(sin(2.0 * .pi * ratio) * maxValue)
 }
