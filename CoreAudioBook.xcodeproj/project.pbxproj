@@ -11,6 +11,8 @@
 		4255166229F2E7F900563897 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
 		5353DE6A29FE3CF500A05E25 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353DE6929FE3CF500A05E25 /* main.swift */; };
 		5353DE6E29FE3ED800A05E25 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
+		53D871122A060B6900951E17 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D871112A060B6900951E17 /* main.swift */; };
+		53D871162A060BA900951E17 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		53D8710D2A060B6800951E17 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +51,8 @@
 		4255166129F2E7F900563897 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5353DE6729FE3CF400A05E25 /* CAToneFileGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAToneFileGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		5353DE6929FE3CF500A05E25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		53D8710F2A060B6800951E17 /* CAStreamFormatTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAStreamFormatTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D871112A060B6900951E17 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +72,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53D8710C2A060B6800951E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D871162A060BA900951E17 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +88,7 @@
 			children = (
 				4255165829F2E10000563897 /* HelloCoreAudio */,
 				5353DE6829FE3CF500A05E25 /* CAToneFileGenerator */,
+				53D871102A060B6900951E17 /* CAStreamFormatTester */,
 				4255165729F2E10000563897 /* Products */,
 				4255166029F2E7F900563897 /* Frameworks */,
 			);
@@ -77,6 +99,7 @@
 			children = (
 				4255165629F2E10000563897 /* HelloCoreAudio */,
 				5353DE6729FE3CF400A05E25 /* CAToneFileGenerator */,
+				53D8710F2A060B6800951E17 /* CAStreamFormatTester */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +126,14 @@
 				5353DE6929FE3CF500A05E25 /* main.swift */,
 			);
 			path = CAToneFileGenerator;
+			sourceTree = "<group>";
+		};
+		53D871102A060B6900951E17 /* CAStreamFormatTester */ = {
+			isa = PBXGroup;
+			children = (
+				53D871112A060B6900951E17 /* main.swift */,
+			);
+			path = CAStreamFormatTester;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +173,23 @@
 			productReference = 5353DE6729FE3CF400A05E25 /* CAToneFileGenerator */;
 			productType = "com.apple.product-type.tool";
 		};
+		53D8710E2A060B6800951E17 /* CAStreamFormatTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53D871132A060B6900951E17 /* Build configuration list for PBXNativeTarget "CAStreamFormatTester" */;
+			buildPhases = (
+				53D8710B2A060B6800951E17 /* Sources */,
+				53D8710C2A060B6800951E17 /* Frameworks */,
+				53D8710D2A060B6800951E17 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAStreamFormatTester;
+			productName = CAStreamFormatTester;
+			productReference = 53D8710F2A060B6800951E17 /* CAStreamFormatTester */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,7 +197,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					4255165529F2E10000563897 = {
@@ -157,6 +205,9 @@
 					};
 					5353DE6629FE3CF400A05E25 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					53D8710E2A060B6800951E17 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -175,6 +226,7 @@
 			targets = (
 				4255165529F2E10000563897 /* HelloCoreAudio */,
 				5353DE6629FE3CF400A05E25 /* CAToneFileGenerator */,
+				53D8710E2A060B6800951E17 /* CAStreamFormatTester */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +245,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5353DE6A29FE3CF500A05E25 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D8710B2A060B6800951E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D871122A060B6900951E17 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +375,12 @@
 		4255165E29F2E10000563897 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -326,10 +388,12 @@
 		4255165F29F2E10000563897 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -337,11 +401,12 @@
 		5353DE6B29FE3CF500A05E25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -349,11 +414,38 @@
 		5353DE6C29FE3CF500A05E25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		53D871142A060B6900951E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		53D871152A060B6900951E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -384,6 +476,15 @@
 			buildConfigurations = (
 				5353DE6B29FE3CF500A05E25 /* Debug */,
 				5353DE6C29FE3CF500A05E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53D871132A060B6900951E17 /* Build configuration list for PBXNativeTarget "CAStreamFormatTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53D871142A060B6900951E17 /* Debug */,
+				53D871152A060B6900951E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
