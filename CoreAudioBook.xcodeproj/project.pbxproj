@@ -13,7 +13,23 @@
 		5353DE6E29FE3ED800A05E25 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
 		53D871122A060B6900951E17 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D871112A060B6900951E17 /* main.swift */; };
 		53D871162A060BA900951E17 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
+		53D8711E2A07793F00951E17 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D8711D2A07793F00951E17 /* main.swift */; };
+		53D871332A07815D00951E17 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
+		53D871402A0781B300951E17 /* CoreAudioUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D8713F2A0781B300951E17 /* CoreAudioUtil.h */; };
+		53D871422A0781B300951E17 /* CoreAudioUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D871412A0781B300951E17 /* CoreAudioUtil.m */; };
+		53D871472A0781BC00951E17 /* CheckError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D871462A0781BC00951E17 /* CheckError.swift */; };
+		53D871482A0781D800951E17 /* libCoreAudioUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D8713D2A0781B200951E17 /* libCoreAudioUtil.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53D871492A0781D800951E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4255164E29F2E10000563897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53D8713C2A0781B200951E17;
+			remoteInfo = CoreAudioUtil;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4255165429F2E10000563897 /* CopyFiles */ = {
@@ -43,6 +59,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		53D871192A07793F00951E17 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		53D871382A07816200951E17 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +88,12 @@
 		5353DE6929FE3CF500A05E25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		53D8710F2A060B6800951E17 /* CAStreamFormatTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAStreamFormatTester; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D871112A060B6900951E17 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		53D8711B2A07793F00951E17 /* CoreAudioRecorder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoreAudioRecorder; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D8711D2A07793F00951E17 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		53D8713D2A0781B200951E17 /* libCoreAudioUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreAudioUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D8713F2A0781B300951E17 /* CoreAudioUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAudioUtil.h; sourceTree = "<group>"; };
+		53D871412A0781B300951E17 /* CoreAudioUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAudioUtil.m; sourceTree = "<group>"; };
+		53D871462A0781BC00951E17 /* CheckError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +121,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53D871182A07793F00951E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D871332A07815D00951E17 /* AudioToolbox.framework in Frameworks */,
+				53D871482A0781D800951E17 /* libCoreAudioUtil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D8713B2A0781B200951E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +146,8 @@
 				4255165829F2E10000563897 /* HelloCoreAudio */,
 				5353DE6829FE3CF500A05E25 /* CAToneFileGenerator */,
 				53D871102A060B6900951E17 /* CAStreamFormatTester */,
+				53D8711C2A07793F00951E17 /* CoreAudioRecorder */,
+				53D8713E2A0781B300951E17 /* CoreAudioUtil */,
 				4255165729F2E10000563897 /* Products */,
 				4255166029F2E7F900563897 /* Frameworks */,
 			);
@@ -100,6 +159,8 @@
 				4255165629F2E10000563897 /* HelloCoreAudio */,
 				5353DE6729FE3CF400A05E25 /* CAToneFileGenerator */,
 				53D8710F2A060B6800951E17 /* CAStreamFormatTester */,
+				53D8711B2A07793F00951E17 /* CoreAudioRecorder */,
+				53D8713D2A0781B200951E17 /* libCoreAudioUtil.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +197,36 @@
 			path = CAStreamFormatTester;
 			sourceTree = "<group>";
 		};
+		53D8711C2A07793F00951E17 /* CoreAudioRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				53D8711D2A07793F00951E17 /* main.swift */,
+			);
+			path = CoreAudioRecorder;
+			sourceTree = "<group>";
+		};
+		53D8713E2A0781B300951E17 /* CoreAudioUtil */ = {
+			isa = PBXGroup;
+			children = (
+				53D8713F2A0781B300951E17 /* CoreAudioUtil.h */,
+				53D871412A0781B300951E17 /* CoreAudioUtil.m */,
+				53D871462A0781BC00951E17 /* CheckError.swift */,
+			);
+			path = CoreAudioUtil;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		53D871392A0781B200951E17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D871402A0781B300951E17 /* CoreAudioUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4255165529F2E10000563897 /* HelloCoreAudio */ = {
@@ -190,6 +280,42 @@
 			productReference = 53D8710F2A060B6800951E17 /* CAStreamFormatTester */;
 			productType = "com.apple.product-type.tool";
 		};
+		53D8711A2A07793F00951E17 /* CoreAudioRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53D871212A07793F00951E17 /* Build configuration list for PBXNativeTarget "CoreAudioRecorder" */;
+			buildPhases = (
+				53D871172A07793F00951E17 /* Sources */,
+				53D871182A07793F00951E17 /* Frameworks */,
+				53D871192A07793F00951E17 /* CopyFiles */,
+				53D871382A07816200951E17 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53D8714A2A0781D800951E17 /* PBXTargetDependency */,
+			);
+			name = CoreAudioRecorder;
+			productName = CoreAudioRecorder;
+			productReference = 53D8711B2A07793F00951E17 /* CoreAudioRecorder */;
+			productType = "com.apple.product-type.tool";
+		};
+		53D8713C2A0781B200951E17 /* CoreAudioUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53D871432A0781B300951E17 /* Build configuration list for PBXNativeTarget "CoreAudioUtil" */;
+			buildPhases = (
+				53D871392A0781B200951E17 /* Headers */,
+				53D8713A2A0781B200951E17 /* Sources */,
+				53D8713B2A0781B200951E17 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreAudioUtil;
+			productName = CoreAudioUtil;
+			productReference = 53D8713D2A0781B200951E17 /* libCoreAudioUtil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +335,13 @@
 					53D8710E2A060B6800951E17 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					53D8711A2A07793F00951E17 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					53D8713C2A0781B200951E17 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
 				};
 			};
 			buildConfigurationList = 4255165129F2E10000563897 /* Build configuration list for PBXProject "CoreAudioBook" */;
@@ -227,6 +360,8 @@
 				4255165529F2E10000563897 /* HelloCoreAudio */,
 				5353DE6629FE3CF400A05E25 /* CAToneFileGenerator */,
 				53D8710E2A060B6800951E17 /* CAStreamFormatTester */,
+				53D8711A2A07793F00951E17 /* CoreAudioRecorder */,
+				53D8713C2A0781B200951E17 /* CoreAudioUtil */,
 			);
 		};
 /* End PBXProject section */
@@ -256,7 +391,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53D871172A07793F00951E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D8711E2A07793F00951E17 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D8713A2A0781B200951E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D871422A0781B300951E17 /* CoreAudioUtil.m in Sources */,
+				53D871472A0781BC00951E17 /* CheckError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53D8714A2A0781D800951E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53D8713C2A0781B200951E17 /* CoreAudioUtil */;
+			targetProxy = 53D871492A0781D800951E17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4255165B29F2E10000563897 /* Debug */ = {
@@ -450,6 +610,69 @@
 			};
 			name = Release;
 		};
+		53D8711F2A07793F00951E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV4MQR92AT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		53D871202A07793F00951E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV4MQR92AT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		53D871442A0781B300951E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV4MQR92AT;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		53D871452A0781B300951E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV4MQR92AT;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -485,6 +708,24 @@
 			buildConfigurations = (
 				53D871142A060B6900951E17 /* Debug */,
 				53D871152A060B6900951E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53D871212A07793F00951E17 /* Build configuration list for PBXNativeTarget "CoreAudioRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53D8711F2A07793F00951E17 /* Debug */,
+				53D871202A07793F00951E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53D871432A0781B300951E17 /* Build configuration list for PBXNativeTarget "CoreAudioUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53D871442A0781B300951E17 /* Debug */,
+				53D871452A0781B300951E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
