@@ -7,7 +7,7 @@
 
 import Foundation
 
-public func checkError(_ error: OSStatus) {
+public func checkError(_ error: OSStatus, operation: StaticString = "") {
     guard error != noErr else { return }
 
     let chars = withUnsafeBytes(of: error.bigEndian) { Array($0) }
@@ -16,9 +16,11 @@ public func checkError(_ error: OSStatus) {
     if chars.allSatisfy({ isprint(Int32($0)) != 0 }) {
         errorString = "'\(String(cString: chars + [0]))'"
     } else {
-        errorString = "\(error)"
+        errorString = "\(error) "
     }
 
-    try! FileHandle.standardError.write(contentsOf: Data(errorString.utf8))
+    try! FileHandle.standardError.write(
+        contentsOf: Data("Error: \(operation) (\(errorString))\n".utf8)
+    )
     exit(1)
 }

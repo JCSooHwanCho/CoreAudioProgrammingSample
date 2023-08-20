@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		4255165A29F2E10000563897 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255165929F2E10000563897 /* main.swift */; };
 		4255166229F2E7F900563897 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
+		534A04E82A6D16BA00173D84 /* MyRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A04E72A6D16BA00173D84 /* MyRecorder.swift */; };
 		5353DE6A29FE3CF500A05E25 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353DE6929FE3CF500A05E25 /* main.swift */; };
 		5353DE6E29FE3ED800A05E25 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
 		53D871122A060B6900951E17 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D871112A060B6900951E17 /* main.swift */; };
 		53D871162A060BA900951E17 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
 		53D8711E2A07793F00951E17 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D8711D2A07793F00951E17 /* main.swift */; };
 		53D871332A07815D00951E17 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4255166129F2E7F900563897 /* AudioToolbox.framework */; };
-		53D871402A0781B300951E17 /* CoreAudioUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D8713F2A0781B300951E17 /* CoreAudioUtil.h */; };
-		53D871422A0781B300951E17 /* CoreAudioUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D871412A0781B300951E17 /* CoreAudioUtil.m */; };
 		53D871472A0781BC00951E17 /* CheckError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D871462A0781BC00951E17 /* CheckError.swift */; };
 		53D871482A0781D800951E17 /* libCoreAudioUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D8713D2A0781B200951E17 /* libCoreAudioUtil.a */; };
 /* End PBXBuildFile section */
@@ -84,6 +83,7 @@
 		4255165629F2E10000563897 /* HelloCoreAudio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloCoreAudio; sourceTree = BUILT_PRODUCTS_DIR; };
 		4255165929F2E10000563897 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4255166129F2E7F900563897 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		534A04E72A6D16BA00173D84 /* MyRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecorder.swift; sourceTree = "<group>"; };
 		5353DE6729FE3CF400A05E25 /* CAToneFileGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAToneFileGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		5353DE6929FE3CF500A05E25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		53D8710F2A060B6800951E17 /* CAStreamFormatTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAStreamFormatTester; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,8 +91,6 @@
 		53D8711B2A07793F00951E17 /* CoreAudioRecorder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoreAudioRecorder; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D8711D2A07793F00951E17 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		53D8713D2A0781B200951E17 /* libCoreAudioUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreAudioUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		53D8713F2A0781B300951E17 /* CoreAudioUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAudioUtil.h; sourceTree = "<group>"; };
-		53D871412A0781B300951E17 /* CoreAudioUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAudioUtil.m; sourceTree = "<group>"; };
 		53D871462A0781BC00951E17 /* CheckError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				53D8711D2A07793F00951E17 /* main.swift */,
+				534A04E72A6D16BA00173D84 /* MyRecorder.swift */,
 			);
 			path = CoreAudioRecorder;
 			sourceTree = "<group>";
@@ -208,8 +207,6 @@
 		53D8713E2A0781B300951E17 /* CoreAudioUtil */ = {
 			isa = PBXGroup;
 			children = (
-				53D8713F2A0781B300951E17 /* CoreAudioUtil.h */,
-				53D871412A0781B300951E17 /* CoreAudioUtil.m */,
 				53D871462A0781BC00951E17 /* CheckError.swift */,
 			);
 			path = CoreAudioUtil;
@@ -222,7 +219,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53D871402A0781B300951E17 /* CoreAudioUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53D8711E2A07793F00951E17 /* main.swift in Sources */,
+				534A04E82A6D16BA00173D84 /* MyRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +400,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53D871422A0781B300951E17 /* CoreAudioUtil.m in Sources */,
 				53D871472A0781BC00951E17 /* CheckError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
